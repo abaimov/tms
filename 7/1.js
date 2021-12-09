@@ -9,7 +9,7 @@ function declarationAvg() {
   return summ / count;
 }
 
-console.log(avg(6, 10, 12));
+console.log(declarationAvg(6, 10, 12));
 
 //2
 
