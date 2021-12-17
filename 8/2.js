@@ -9,8 +9,7 @@ const files = [
   "report.pdf",
 ];
 
-let newArr = [];
-files.filter(
-  (el) => el.split(".")[1] === "pdf" && newArr.push(el.split(".")[0])
+const newArr = files.filter(
+  (el) => el.split(".")[el.split(".").length - 1] === "pdf"
 );
-console.log("newArr :>> ", newArr);
+console.log(" ~ newArr", newArr);
